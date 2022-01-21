@@ -37,7 +37,7 @@ func NewSystemClient(cc grpc.ClientConnInterface) SystemClient {
 
 func (c *systemClient) Version(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*VersionResponse, error) {
 	out := new(VersionResponse)
-	err := c.cc.Invoke(ctx, "/canary.System/Version", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/leo.System/Version", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -46,7 +46,7 @@ func (c *systemClient) Version(ctx context.Context, in *emptypb.Empty, opts ...g
 
 func (c *systemClient) Info(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*InfoResponse, error) {
 	out := new(InfoResponse)
-	err := c.cc.Invoke(ctx, "/canary.System/Info", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/leo.System/Info", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -95,7 +95,7 @@ func _System_Version_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/canary.System/Version",
+		FullMethod: "/leo.System/Version",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(SystemServer).Version(ctx, req.(*emptypb.Empty))
@@ -113,7 +113,7 @@ func _System_Info_Handler(srv interface{}, ctx context.Context, dec func(interfa
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/canary.System/Info",
+		FullMethod: "/leo.System/Info",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(SystemServer).Info(ctx, req.(*emptypb.Empty))
@@ -125,7 +125,7 @@ func _System_Info_Handler(srv interface{}, ctx context.Context, dec func(interfa
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var System_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "canary.System",
+	ServiceName: "leo.System",
 	HandlerType: (*SystemServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

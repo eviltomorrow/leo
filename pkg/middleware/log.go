@@ -5,7 +5,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/eviltomorrow/canary/pkg/zlog"
+	"github.com/eviltomorrow/leo/pkg/zlog"
 	jsoniter "github.com/json-iterator/go"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
