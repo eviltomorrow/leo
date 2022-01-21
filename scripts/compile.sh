@@ -29,6 +29,7 @@ esac
 
 cur_dir=$(pwd)
 pb_dir=$(pwd)/pkg/pb
+rm -rf ${pb_dir}
 mkdir -p ${pb_dir}
 
 cd api

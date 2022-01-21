@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1-devel
 // 	protoc        v3.19.3
-// source: heart.proto
+// source: metrics.proto
 
 package pb
 
@@ -19,16 +19,16 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-var File_heart_proto protoreflect.FileDescriptor
+var File_metrics_proto protoreflect.FileDescriptor
 
-var file_heart_proto_rawDesc = []byte{
-	0x0a, 0x0b, 0x68, 0x65, 0x61, 0x72, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x03, 0x6c,
-	0x65, 0x6f, 0x42, 0x07, 0x5a, 0x05, 0x2e, 0x2f, 0x3b, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+var file_metrics_proto_rawDesc = []byte{
+	0x0a, 0x0d, 0x6d, 0x65, 0x74, 0x72, 0x69, 0x63, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
+	0x03, 0x6c, 0x65, 0x6f, 0x42, 0x07, 0x5a, 0x05, 0x2e, 0x2f, 0x3b, 0x70, 0x62, 0x62, 0x06, 0x70,
+	0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
-var file_heart_proto_goTypes = []interface{}{}
-var file_heart_proto_depIdxs = []int32{
+var file_metrics_proto_goTypes = []interface{}{}
+var file_metrics_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -36,26 +36,26 @@ var file_heart_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_heart_proto_init() }
-func file_heart_proto_init() {
-	if File_heart_proto != nil {
+func init() { file_metrics_proto_init() }
+func file_metrics_proto_init() {
+	if File_metrics_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_heart_proto_rawDesc,
+			RawDescriptor: file_metrics_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   0,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_heart_proto_goTypes,
-		DependencyIndexes: file_heart_proto_depIdxs,
+		GoTypes:           file_metrics_proto_goTypes,
+		DependencyIndexes: file_metrics_proto_depIdxs,
 	}.Build()
-	File_heart_proto = out.File
-	file_heart_proto_rawDesc = nil
-	file_heart_proto_goTypes = nil
-	file_heart_proto_depIdxs = nil
+	File_metrics_proto = out.File
+	file_metrics_proto_rawDesc = nil
+	file_metrics_proto_goTypes = nil
+	file_metrics_proto_depIdxs = nil
 }
