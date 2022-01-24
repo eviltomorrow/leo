@@ -1,0 +1,27 @@
+[leo.client]
+    grpc-host = "0.0.0.0"
+    grpc-port = 25902
+
+    etcd-endpoints = [
+        "127.0.0.1:2379",
+    ]
+
+    grpc-endpoints = [
+        "127.0.0.1:1234",
+    ]
+
+    mapping-host = ""
+    netcard-name = ""
+
+    disable-collectors = [
+        "cpu",
+    ]
+
+    scrape-interval = "30s"
+
+[leo.daemon]
+    grpc-host = "0.0.0.0"
+    grpc-port = 25903
+
+    mapping-host = ""
+    netcard-name = ""

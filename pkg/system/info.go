@@ -20,7 +20,7 @@ var (
 	RunningTime = func() string {
 		return tools.FormatDuration(time.Since(LaunchTime))
 	}
-	IP string
+	Ipv4 string
 )
 
 func init() {
@@ -36,8 +36,8 @@ func init() {
 	if err != nil {
 		panic(fmt.Errorf("get host name failure, nest error: %v", err))
 	}
-	IP, err = tools.GetLocalIP()
+	Ipv4, err = tools.GetLocalIpv4Addr()
 	if err != nil {
-		panic(fmt.Errorf("get local ip failure, nest error: %v", err))
+		panic(fmt.Errorf("get local ipv4 addr failure, nest error: %v", err))
 	}
 }
