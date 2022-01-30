@@ -1,7 +1,4 @@
-[leo.client]
-    grpc-host = "0.0.0.0"
-    grpc-port = 25902
-
+[leo.server]
     etcd-endpoints = [
         "127.0.0.1:2379",
     ]
@@ -9,6 +6,11 @@
     grpc-endpoints = [
         "127.0.0.1:1234",
     ]
+    connect-timeout = "10s"
+
+[leo.client]
+    grpc-host = "0.0.0.0"
+    grpc-port = 25902
 
     mapping-host = ""
     netcard-name = ""
@@ -19,7 +21,7 @@
 
     scrape-interval = "30s"
 
-[leo.daemon]
+[leo.watchdog]
     grpc-host = "0.0.0.0"
     grpc-port = 25903
 
